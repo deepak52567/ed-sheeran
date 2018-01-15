@@ -1,3 +1,4 @@
+<?php $hero_text = "Ed's<br>Biography"; ?>
 <!doctype html>
 <html>
 <head>
@@ -10,46 +11,10 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> -->
 </head>
 <body>
-    <nav>
-      <div class="logo-con">
-        <a href="index.html">ED<br>SHEERAN</a>
-      </div>
-      <div class="link-con">
-        <div>
-            <a href="tour_page.html">TOUR</a>
-        </div>
-        <div>
-            <a href="bio.html">BIO</a>
-        </div>
-        <div>
-            <a href="album.html">ALBUM</a>
-        </div>
-        <div>
-            <a href="#">PHOTOS</a>
-        </div>
-        <div>
-            <a href="#">LINKS</a>
-        </div>
-        <div>
-            <a href="#">STORE</a>
-        </div>
-      </div>
-    </nav>
-    <section class="hero">
-        <div class="hero-pages bg-1" id="page1">
-            <img src="image/page1.png">
-        </div>
-        <div class="hero-pages bg-2" id="page2">
-            <img src="image/page2.png">
-        </div>
-        <div class="hero-image">
-            <img src="image/main_page.png">
-        </div>
-        <div class="hero-text">
-            <p>BIOGRAPHY</p>
-            <p>PAGE</p>
-        </div>
-    </section>
+    <?php
+        include_once 'nav-bar.php';
+        include_once 'hero_plugin.php';
+    ?>
     <main>
       <section class="filler">
         <div class="title">About <br>ED Sheeran</div>

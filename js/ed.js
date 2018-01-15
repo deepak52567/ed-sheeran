@@ -23,3 +23,18 @@ $(window).scroll(function () {
 		$('nav').toggleClass('nav-change', false);
 	}
 });
+
+function ytVideoFetch(ytId){
+	$('.fullscreen-player').css('display', 'flex');
+	$('.fullscreen-player').append('<iframe class="main-player" src="https://www.youtube.com/embed/' + ytId + '" frameborder="0" allowfullscreen></iframe>');
+}
+
+// $('.nav-on-click').click(function(){
+// 	var anchor_link = null;
+// 	anchor_link = location.hash;
+// 	anchor_link = anchor_link.slice(1);
+// 	$('main').load(anchor_link + '.php');
+// });
+// function domupdate() {
+// 	$('main').load('tour.php');
+// }
