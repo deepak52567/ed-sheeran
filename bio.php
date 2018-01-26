@@ -1,21 +1,13 @@
 <?php $hero_text = "Ed's<br>Biography"; ?>
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>ED SHEERAN | OFFICIAL</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/ed.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> -->
-</head>
+<?php include_once 'head.php'; ?>
 <body>
-    <?php
-        include_once 'nav-bar.php';
-        include_once 'hero_plugin.php';
-    ?>
-    <main>
+  <?php
+    include_once 'nav-bar.php';
+    include_once 'hero_plugin.php'; 
+  ?>
+  <main>
       <section class="filler">
         <div class="title">About <br>ED Sheeran</div>
         <div class="single-media-container">
@@ -36,5 +28,8 @@
         </div>
       </section>
     </main>
+    <?php
+      include_once 'footer.php';
+    ?>
 </body>
 </html>

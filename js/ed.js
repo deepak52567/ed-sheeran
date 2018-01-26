@@ -12,6 +12,23 @@ $(window).scroll(function(){
 	$('#page2').css({
 		'transform' : 'translateY(' + wScroll/1.2 + '%)'
 	});
+  //
+	// if(wScroll > $('.latest-news').offset().top - 350) {
+	// 	$('.web-grid-container .item').each(function(i){
+	// 		setTimeout(function(){
+	// 			$('.web-grid-container .item').eq(i).addClass('trans-left');
+	// 		}, 150 * (i+1));
+	// 		$('.filler-button').addClass('button-reveal');
+	// 	});
+	// }
+  //
+	// if(wScroll > $('.photos-grid').offset().top - 350) {
+	// 	$('.web-grid-container iframe').each(function(i){
+	// 		setTimeout(function(){
+	// 			$('.web-grid-container iframe').eq(i).addClass('trans-left');
+	// 		}, 150 * (i+1));
+	// 	});
+	// }
 });
 
 $(window).scroll(function () {

@@ -4,22 +4,14 @@
 ?>
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>ED SHEERAN | OFFICIAL</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/ed.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-</head>
+<?php include_once 'head.php'; ?>
 <body>
-    <?php
-        include_once 'nav-bar.php';
-        include_once 'hero_plugin.php';
-        include_once 'youtube_player.php';
-    ?>
-    <main>
+  <?php
+    include_once 'nav-bar.php';
+    include_once 'hero_plugin.php';
+    include_once 'youtube_player.php'; 
+  ?>
+  <main>
     <section class="filler">
       <div class="title">ED Sheeran's <br>Songs</div>
       <div class="web-grid-container songs-grid">
@@ -45,5 +37,8 @@
       </div>
     </section>
     </main>
+    <?php
+        include_once 'footer.php';
+    ?>
 </body>
 </html>
